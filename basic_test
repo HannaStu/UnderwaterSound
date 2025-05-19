@@ -1,0 +1,5 @@
+var = True
+
+if var:
+    print("hi")
+
