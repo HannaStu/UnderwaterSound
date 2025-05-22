@@ -1,0 +1,9 @@
+{
+ model_path: C:\Users\hurh\GitHub\underwater-noise\final_weights\VGGish\model.joblib,
+ labels_mapping_path: C:\Users\hurh\GitHub\underwater-noise\final_weights\VGGish\labels_mapping.json,
+ desired_sr: 32000,
+ desired_duration: 1.0,
+ hopsize: 20,
+ n_fft: 1024,
+
+}

@@ -1,0 +1,35 @@
+augmentmel: True  # Decides if we use LibrosaSpec or AugmentMelSTFT
+melspec: True  # If we have selected LibrosaSpec, it decides if we compute a mel spectrogram or a normal (linear y) spectrogram
+
+# Augment mel
+freqm: 0
+timem: 0
+n_mels: 128
+win_length: 800
+hopsize: 20
+n_fft: 1024
+fmin: 0.0
+fmax: null
+fmin_aug_range: 10
+fmax_aug_range: 2000
+
+# Model related
+freeze: False
+model_name: mn10_as
+compile: False # Whether to compile the model
+balanced_test: False
+
+# Hyperparameters
+optimizer: adam
+lr: 0.001
+patience: 4
+batch_size: 4
+n_epochs: 3
+
+#EcossDataset
+sr: 32000.0
+duration: 3.0
+window: True
+
+# If we want to test on train set
+test_on_train: False
